@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font;
+    font-weight: 200;
+}
+
+*,*:focus,*:hover{
+    outline:none;
+}
+
+.d-block{
+    width:100%;
+    text-align: center;
+}
+@font-face {
+    font-family: font;
+    src: url(/TitilliumText22L001.otf);
+}
+
+@font-face {
+    font-family: fontbold;
+    src: url(/TitilliumText22L003.otf);
+}
+
+/* Buttons */
+
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background: rgb(126,195,31);
+background: linear-gradient(0deg, rgba(126,195,31,1) 0%, rgba(163,216,64,1) 100%);
+    border: 1px solid #3b9a00;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #3b9a00;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background: rgb(90,139,22);
+    background: linear-gradient(0deg, rgba(90,139,22,1) 0%, rgba(116,154,46,1) 100%);
+    border: 1px solid #3b9a00;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+/* GLOBAL */
+
+body{
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1024px;
+    width: 80%;
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
+
+.left{
+    display:flex;
+    flex-direction: column;
+    width: 382px;
+}
+
+.right{
+    display:flex;
+    flex-direction: column;
+    width: 382px;
+}
+
+section{
+    webkit-box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.14);
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+/* INPUTS */
+
+input[type=text]{
+    width: 100%;
+    margin-bottom: 22px;
+    height: 40px;
+    padding-left: 83px;
+    color: #afafaf;
+    font-size: 16px;
+    border: 1px solid #c6c6c6;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+    box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+    background-color: #f6f6f6;
+    border-radius: 4px;
+}
+
+.username{
+    background-image: url(/img/username.png);
+    background-repeat: no-repeat;
+    background-position-y: 8px;
+    background-position-x: 30px;
+}
+
+.pass{
+    background-image: url(/img/pass.png);
+    background-repeat: no-repeat;
+    background-position-y: 6px;
+    background-position-x: 30px;
+}
+
+input[type=text]:last-child{
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+
+input[type=text]:focus { 
+    outline-color: 1px solid #c6c6c6 !important;
+}
+
+input[type=text]::placeholder{
+    color: #afafaf;
+}
+
+.register_checkbox{
+    margin-bottom: 20px;
+    color: #afafaf;
+}
+
+textarea{
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 250px;
+    margin-bottom: 22px;
+    padding: 10px;
+    color: #afafaf;
+    font-size: 16px;
+    border: 1px solid #c6c6c6;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+    box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+    background-color: #f6f6f6;
+    border-radius: 4px;
+}
+
+h2{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    font-family: fontbold;
+    font-weight: 500;
+}
+
+.button_divide{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.button{
+    text-align: center;
+    width: calc(50% - 10px);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width : 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;
+    }
+}
