@@ -16,12 +16,12 @@
 }
 @font-face {
     font-family: font;
-    src: url(/TitilliumText22L001.otf);
+    src: url(TitilliumText22L001.otf);
 }
 
 @font-face {
     font-family: fontbold;
-    src: url(/TitilliumText22L003.otf);
+    src: url(TitilliumText22L003.otf);
 }
 
 /* ----- BUTTONS ----- */
