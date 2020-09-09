@@ -84,15 +84,33 @@ body{
     height: 100%;
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 60px auto;
+}
+
+.logo img{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 300px;
+}
+
+
 .container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 1024px;
     width: 80%;
-    margin: 100px auto;
+    margin: 0 auto;
     flex-wrap: wrap;
 }
+
 
 .left{
     display:flex;
