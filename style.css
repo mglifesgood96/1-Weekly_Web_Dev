@@ -180,7 +180,7 @@ input[type=password]::placeholder
 
 .register_checkbox{
     color: #afafaf;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .checkbox-desc{
@@ -251,11 +251,9 @@ textarea{
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-bottom: 0px;
+    margin: 0 0;
     width: calc(50% - 10px);
 }
-
-
 
 .wrapper-element{
     width: calc(50% - 10px);
