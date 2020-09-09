@@ -24,9 +24,8 @@
     src: url(/TitilliumText22L003.otf);
 }
 
-/* Buttons */
-
 /* ----- BUTTONS ----- */
+
 .btn:link,
 .btn:visited,
 input[type=submit] {
@@ -43,7 +42,7 @@ input[type=submit] {
 .btn-full:visited,
 input[type=submit] {
     background: rgb(126,195,31);
-background: linear-gradient(0deg, rgba(126,195,31,1) 0%, rgba(163,216,64,1) 100%);
+    background: linear-gradient(0deg, rgba(126,195,31,1) 0%, rgba(163,216,64,1) 100%);
     border: 1px solid #3b9a00;
     color: #fff;
 }
@@ -118,7 +117,7 @@ section{
 
 /* INPUTS */
 
-input[type=text]{
+input[type=text], select{
     width: 100%;
     margin-bottom: 22px;
     height: 40px;
@@ -133,18 +132,8 @@ input[type=text]{
     border-radius: 4px;
 }
 
-.username{
-    background-image: url(/img/username.png);
-    background-repeat: no-repeat;
-    background-position-y: 8px;
-    background-position-x: 30px;
-}
-
-.pass{
-    background-image: url(/img/pass.png);
-    background-repeat: no-repeat;
-    background-position-y: 6px;
-    background-position-x: 30px;
+select *{
+    padding: 5px;
 }
 
 input[type=text]:last-child{
@@ -170,6 +159,7 @@ textarea{
     min-width: 100%;
     max-width: 100%;
     max-height: 250px;
+    height: 40px;
     margin-bottom: 22px;
     padding: 10px;
     color: #afafaf;
@@ -180,6 +170,21 @@ textarea{
     box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
     background-color: #f6f6f6;
     border-radius: 4px;
+}
+
+/* ICONS */
+.username{
+    background-image: url(/img/username.png);
+    background-repeat: no-repeat;
+    background-position-y: 8px;
+    background-position-x: 30px;
+}
+
+.pass{
+    background-image: url(/img/pass.png);
+    background-repeat: no-repeat;
+    background-position-y: 6px;
+    background-position-x: 30px;
 }
 
 h2{
