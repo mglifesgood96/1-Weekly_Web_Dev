@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
-    https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map
 </head>
 <body>
     <div class="container">
@@ -19,8 +17,9 @@
                     <input type="text" placeholder="Username" class="icon username">
                     <input type="text" placeholder="Password" class="icon pass">
                     <input type="text" placeholder="Confirm password" class="icon pass">
-                    <select>
-                        <option value="0">-</option>
+                    <input type="text" placeholder="Email" class="icon mail">
+                    <select class="icon location">
+                        <option value="0">Your Location</option>
                         <option value="1">Audi</option>
                         <option value="2">BMW</option>
                         <option value="3">Citroen</option>
@@ -44,9 +43,9 @@
     <!-- SEND EMAIL -->
             <h2>Send E-mail</h2>
             <section>
-                <input type="text" placeholder="email" class="username">
-                <input type="text" placeholder="email" class="username">
-                <textarea id="w3review" name="w3review" rows="1" cols="50"></textarea>
+                <input type="text" placeholder="Your name" class="username">
+                <input type="text" placeholder="Your email" class="mail">
+                <textarea id="w3review" name="w3review" rows="1" cols="50" placeholder="Type your text here..."></textarea>
                 <div class="register_checkbox">
                     <input type="checkbox">
                     I have read and accept the terms of use.
