@@ -49,8 +49,9 @@ input[type=submit] {
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #3b9a00;
-    color: #e67e22;
+    background: linear-gradient(0deg,rgb(168, 39, 17) 0%, #c3381f 100%);
+    border: 1px solid #912613;
+    color: #fff;
 }
 
 .btn:hover,
@@ -69,7 +70,8 @@ input[type=submit]:active {
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #cf6d17;
+    background: linear-gradient(0deg,rgb(126, 29, 12) 0%, #942916 100%);
+    border: 1px solid #791e0e;
     color: #fff;
 }
 
@@ -98,6 +100,8 @@ body{
     background-size: cover;
     width: 100%;
     max-width: 300px;
+    background-blend-mode: screen;
+    opacity: 60%;
 }
 
 
@@ -176,6 +180,12 @@ input[type=password]::placeholder
 
 .register_checkbox{
     color: #afafaf;
+    margin-bottom: 20px;
+}
+
+.checkbox-desc{
+    padding-left: 10px;
+    display: inline;
 }
 
 textarea{
@@ -231,6 +241,28 @@ textarea{
     background-position-x: 34px;
 }
 
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .register_checkbox{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 0px;
+    width: calc(50% - 10px);
+}
+
+
+
+.wrapper-element{
+    width: calc(50% - 10px);
+    text-align: center;
+}
+
+
 h2{
     font-size: 32px;
     text-align: center;
@@ -241,21 +273,7 @@ h2{
     font-weight: 500;
 }
 
-.wrapper_2{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.wrapped_2{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: calc(50% - 10px);
-    color: #afafaf;
-}
 
 /* MEDIA QUERIES */
 
